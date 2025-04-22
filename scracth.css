@@ -1,0 +1,206 @@
+/* General body styles */
+body {
+    background-color: #1e1e1e; /* Dark background for a sleek and modern feel */
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #ecf0f1; /* Light text color for contrast */
+}
+
+/* Container for the whole page */
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 30px;
+}
+
+/* Header styles */
+h1, h2 {
+    color: #f39c12; /* Gold for headers to pop against the dark background */
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Fun font size and text shadow for headers */
+h1 {
+    font-size: 2.5rem;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
+}
+
+h2 {
+    font-size: 2rem;
+    color: #e74c3c; /* Bold red for H2 for contrast */
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
+}
+
+/* Section styling */
+.section {
+    background-color: #34495e; /* Dark blue-gray background for sections */
+    padding: 25px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    border: 2px solid #f39c12; /* Gold border for section separation */
+}
+
+/* Fun background colors for sections */
+#business-passion {
+    background-color: #e74c3c; /* Bold red */
+}
+
+#business-image {
+    background-color: #2980b9; /* Bright blue */
+    color: white;
+}
+
+#business-video {
+    background-color: #f39c12; /* Gold */
+    color: black;
+}
+
+#tableau-graph {
+    background-color: #2c3e50; /* Darker blue for contrast */
+    color: white;
+}
+
+/* List styling */
+ol {
+    list-style-position: inside;
+    margin-left: 20px;
+    font-size: 1.1rem;
+}
+
+li {
+    margin: 15px 0;
+    padding: 10px;
+    background-color: #ecf0f1; /* Light gray background for list items */
+    border-radius: 5px;
+    color: black; /* Text is always readable */
+}
+
+li:hover {
+    background-color: #f39c12; /* Gold hover effect for list items */
+    color: black;
+    cursor: pointer;
+}
+
+/* Section 2: Image */
+#business-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+#business-image img:hover {
+    transform: scale(1.05); /* Zoom-in effect on hover */
+}
+
+#business-image p {
+    text-align: center;
+    font-size: 1.1rem;
+    color: #f7f7f7;
+    font-style: italic;
+}
+
+/* Section 3: YouTube Video */
+#business-video iframe {
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+#business-video iframe:hover {
+    transform: scale(1.05);
+}
+
+/* Section 4: Tableau Graph */
+#tableau-graph p {
+    text-align: center;
+    font-size: 1.1rem;
+    color: #ecf0f1;
+}
+
+/* Anchor Link Styles */
+a {
+    color: #f39c12; /* Gold color for links */
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px;
+    transition: background-color 0.3s ease;
+}
+
+a:hover {
+    background-color: #2980b9; /* Blue hover effect for links */
+    color: white;
+    text-decoration: underline;
+    border-radius: 5px;
+}
+
+/* Back to Top Link */
+#top-link {
+    display: inline-block;
+    margin-top: 20px;
+    text-align: center;
+}
+
+#top-link a {
+    font-size: 1.1rem;
+    color: #e74c3c; /* Red color for "Back to Top" */
+}
+
+/* Hover effect for Back to Top link */
+#top-link a:hover {
+    color: #f39c12; /* Gold hover effect */
+    font-weight: bold;
+}
+
+/* Responsive design adjustments */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.7rem;
+    }
+
+    /* Make text slightly smaller on mobile */
+    ol {
+        font-size: 1rem;
+    }
+
+    li {
+        font-size: 1rem;
+    }
+
+    #business-image img {
+        max-width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Reduce margins and paddings further on very small screens */
+    body {
+        padding: 10px;
+    }
+
+    .section {
+        padding: 20px;
+    }
+
+    h1, h2 {
+        font-size: 1.4rem;
+    }
+
+    #business-image img {
+        max-width: 100%;
+    }
+}
